@@ -120,15 +120,3 @@ lightTheme.addEventListener('change', function () {
 darkTheme.addEventListener('change', function () {
     toggleTheme(true);
 });
-
-const columnSelect = document.querySelector('#numberOfColumns');
-const content = document.querySelectorAll('.content');
-
-columnSelect.addEventListener('change', () => {
-    const selectedValue = columnSelect.value;
-    if (selectedValue === '1') {
-        content.style.columnCount = 1;
-    } else if (selectedValue === '2') {
-        content.style.columnCount = 2;
-    }
-});
