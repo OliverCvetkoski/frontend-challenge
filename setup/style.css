@@ -1,0 +1,188 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    display: flex;
+
+}
+
+.sidebar {
+    background: #ffffff;
+    margin: 15px;
+    width: 340px;
+
+}
+
+.preview {
+    background: #f9fafd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 5em;
+}
+
+.layout-placeholder {
+    color: #464b5b;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 7em;
+}
+
+.accordion {
+    background: #e6ebff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.accordion-title {
+    color: #0033ff;
+    font-weight: 800;
+    font-size: 18px;
+    margin: 0;
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+input {
+    box-sizing: border-box;
+}
+
+.form-control {
+    background-color: #ffffff;
+    border: 1px solid #d6dae4;
+    border-radius: 3px;
+    padding: 6px 12px;
+    height: 38px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 14px;
+}
+
+input[type="radio"] {
+    margin: 0;
+    width: 15px;
+    height: 15px;
+}
+
+.radio-select {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 1em;
+    position: relative;
+    right: 49%;
+    cursor: pointer;
+    top: 50%;
+    margin-bottom: 100px;
+
+}
+
+.content .dark-theme {
+    background-color: black !important;
+    color: white;
+}
+
+.image img {
+    width: 100%;
+    height: 14em;
+    position: relative;
+    bottom: 6em;
+}
+
+.content {
+    padding: 5em 1em 4em 1em;
+    border: 2px solid black;
+    width: 250px;
+    height: 300px;
+    animation: slideUp 0.4s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+    }
+}
+
+.profileImg img {
+    position: relative;
+    bottom: 4.3em;
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
+    border: 2px solid white;
+}
+
+.caption {
+    font-size: 16px;
+    position: relative;
+    top: -9em;
+    max-height: 60px;
+    overflow: hidden;
+}
+
+.name {
+    position: relative;
+    top: -6.8em;
+    left: 3.5em;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.date {
+    position: relative;
+    top: -11em;
+    left: 6em;
+    font-size: 12px;
+}
+
+.likes {
+    position: relative;
+    top: -1em;
+    left: 1.2em;
+}
+
+.heart {
+    position: relative;
+    top: -2.1em;
+    cursor: pointer;
+}
+
+@media (max-width:992px) {
+    .content {
+        width: 180px;
+        height: 240px;
+    }
+
+    .image img {
+        width: 180px;
+        height: 200px;
+    }
+}
